@@ -1,0 +1,19 @@
+MongoDB Atlas
+
+Log in at: https://cloud.mongodb.com/
+
+Cluster name: FR-CL0
+Admin: admin; Password: FR2017Mongo!
+
+Database name: profile_repo
+Collection name: profile_core
+
+1. Add IP whitelist with MongoDB Cloud account
+
+2. Connect with Mongo Shell that supports SSL/ TLS
+mongo "mongodb://fr-cl0-shard-00-00-uszg6.mongodb.net:27017,fr-cl0-shard-00-01-uszg6.mongodb.net:27017,fr-cl0-shard-00-02-uszg6.mongodb.net:27017/test?replicaSet=FR-CL0-shard-0" --authenticationDatabase admin --ssl --username admin --password FR2017Mongo!
+
+3. Connect with Python
+https://www.mongodb.com/blog/post/getting-started-with-python-and-mongodb
+(a) Install official Python driver for MongoDB: PyMongo
+(b) Access MongoDB Atlas DB with library
